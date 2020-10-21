@@ -7,11 +7,11 @@ type AffairPropsType = {
     id: number
     affair: string
     priority: AffairPriorityType
-    deleteAffairCallback: any // need to fix any
+    deleteAffairCallback: (id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => { props.deleteAffairCallback(props.id) };// need to fix
+    const deleteCallback = () => { props.deleteAffairCallback(props.id) };
     return (
         <li className={s.affairsItem}>
             <span>{props.affair}</span>
