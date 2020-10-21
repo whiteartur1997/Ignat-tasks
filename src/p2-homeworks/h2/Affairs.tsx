@@ -1,16 +1,16 @@
 import React from "react";
 import Affair from "./Affair";
-import { AffairType } from "./HW2";
+import { AffairType, FilterType } from "./HW2";
 import s from './Affairs.module.css';
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
-    setFilter: any
-    deleteAffairCallback: any
+    // setFilter: any
+    deleteAffairCallback: (id: number) => void
+    filterAffairsCallback: (filter: FilterType) => void
 }
 
 function Affairs(props: AffairsPropsType) {
-    debugger
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair
             key={a.id}
@@ -21,10 +21,10 @@ function Affairs(props: AffairsPropsType) {
         />
     ));
 
-    const setAll = () => { }; // need to fix
-    const setHigh = () => { };
-    const setMiddle = () => { };
-    const setLow = () => { };
+    const setAll = () => {props.filterAffairsCallback("all")}; // need to fix
+    const setHigh = () => {props.filterAffairsCallback("high")};
+    const setMiddle = () => {props.filterAffairsCallback("medium")};
+    const setLow = () => {props.filterAffairsCallback("low")};
 
     return (
         <div className={s.affairs}>

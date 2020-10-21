@@ -20,7 +20,7 @@ const defaultAffairs: Array<AffairType> = [
 ];
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
     if (filter === "all") return affairs;
     else {
         return affairs.filter(a => a.priority === filter);
@@ -31,27 +31,19 @@ export const deleteAffair = (affairs: Array<AffairType>, id: number): Array<Affa
 }
 
 function HW2() {
-    debugger
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs);
-    debugger
     const [filter, setFilter] = useState<FilterType>("all");
-    debugger
-
     const filteredAffairs = filterAffairs(affairs, filter);
-    debugger
     const deleteAffairCallback = (id: number) => setAffairs(deleteAffair(affairs, id));
-    debugger
-    console.log(filteredAffairs);
-    debugger
+    const filterAffairsCallback = (filter: FilterType) => setFilter(filter);
     return (
         <div>
             homeworks 2
-
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
-                setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+                filterAffairsCallback={filterAffairsCallback}
             />
         </div>
     );
