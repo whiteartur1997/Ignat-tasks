@@ -11,7 +11,7 @@ function HW4() {
         if (error) {
             alert("введите текст...");
         } else {
-            alert(text); // если нет ошибки показать текст
+            alert(text);
         }
     }
 
@@ -24,16 +24,14 @@ function HW4() {
             homeworks 4
 
             <div className={s.column}>
-                {/*should work (должно работать)*/}
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // className={s.blue} // проверьте, рабоет ли смешивание классов
+                    // className={s.blue} // проверьте, рабоет ли смешивание классов - WORKS
                 />
 
-                {/*should work (должно работать)*/}
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
@@ -52,13 +50,6 @@ function HW4() {
                 {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
         </div>
     );
 }

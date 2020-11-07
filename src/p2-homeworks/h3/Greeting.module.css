@@ -15,6 +15,7 @@
   width: 70%;
   padding: 15px 10px;
   border-radius: 5px;
+  outline: none;
 }
 
 .btn {
@@ -32,6 +33,7 @@
 }
 
 .errorMessage {
+  display: block;
   font-size: 32px;
   color: red;
   text-align: center;
