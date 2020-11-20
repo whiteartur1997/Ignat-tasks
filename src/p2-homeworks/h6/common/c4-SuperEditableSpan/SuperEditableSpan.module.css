@@ -1,0 +1,13 @@
+.superEditableSpan {
+  position: relative;
+}
+
+.superEditableSpan:before {
+  content: '\f303';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
