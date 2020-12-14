@@ -16,6 +16,7 @@ const initialPeople: PeopleType[] = [
 
 function HW8() {
     const [people, setPeople] = useState<PeopleType[]>(initialPeople);
+    const [value, setValue] = useState<string>("18");
 
     const finalPeople = people.map((p, i) => (
         <tr key={p._id}>
@@ -65,6 +66,12 @@ function HW8() {
                 <SuperButton onClick={sortUp}>sort up</SuperButton>
                 <SuperButton onClick={sortDown}>sort down</SuperButton>
                 <SuperButton onClick={checkAge}>check 18+</SuperButton>
+                <SuperEditableSpan
+                    value={value}
+                    onChangeText={setValue}
+                    spanProps={{ // plain obj
+                        children: "" ? undefined : "double click to change age for check",
+                    }}>18</SuperEditableSpan>
             </div>
         </div>
     );

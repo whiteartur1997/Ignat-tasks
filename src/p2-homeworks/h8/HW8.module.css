@@ -1,0 +1,32 @@
+.HW8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HW8__table {
+    width: 50%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+.tr {
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.HW8__buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

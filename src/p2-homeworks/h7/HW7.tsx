@@ -16,8 +16,6 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
-                    // передал onChange
-                    onChange={() => alert("changed from select")}
                 />
             </div>
             <div>
@@ -26,7 +24,6 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
-                    onChange={() => alert("changed from radio")}
                 />
             </div>
         </div>

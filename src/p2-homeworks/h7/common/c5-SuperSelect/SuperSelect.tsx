@@ -3,7 +3,7 @@ import React, { ChangeEvent, DetailedHTMLProps, SelectHTMLAttributes } from "rea
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
-    options?: any[]
+    options?: string[]
     onChangeOption?: (option: string) => void
 }
 
@@ -16,7 +16,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 ) => {
 
     // нормально ли так проверять, передали ли options
-    const mappedOptions: any[] = options?.map((opt, i) => <option key={i}>{opt}</option>) || [];
+    const mappedOptions: JSX.Element[] = options?.map((opt, i) => <option key={i}>{opt}</option>) || [];
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
         // onChange мы должы передавать в пропсах?
@@ -25,9 +25,9 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     }
 
     return (
-        <select onChange={onChangeCallback} {...restProps}>
-            {mappedOptions}
-        </select>
+            <select onChange={onChangeCallback} {...restProps}>
+                {mappedOptions}
+            </select>
     );
 }
 

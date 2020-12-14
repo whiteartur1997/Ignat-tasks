@@ -4,9 +4,7 @@ import SuperEditableSpan from "./common/c4-SuperEditableSpan/SuperEditableSpan";
 import { restoreState, saveState } from "./localStorage/localStorage";
 
 function HW6() {
-    const [value, setValue] = useState<string>(localStorage.getItem("editable-span-value")
-        && JSON.parse(localStorage.getItem("editable-span-value") || "")
-        || "");
+    const [value, setValue] = useState<string>(restoreState("editable-span-value", ""));
 
     const save = () => {
         saveState<string>("editable-span-value", value);
