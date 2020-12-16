@@ -3,7 +3,6 @@ import {homeWorkReducer} from "./bll/homeWorkReducer";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import {PeopleType} from "./bll/tests/homeWorkReducer.test";
 import s from './HW8.module.css';
-import SuperEditableSpan from "../h6/common/c4-SuperEditableSpan/SuperEditableSpan";
 
 const initialPeople: PeopleType[] = [
     {_id: 0, name: "Кот", age: 3},
