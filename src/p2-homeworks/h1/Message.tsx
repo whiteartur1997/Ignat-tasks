@@ -12,7 +12,7 @@ type MessageType = {
 function Message(props: MessageType) {
     return (
         <div className={`${s.message} ${props.sentByMe ? "" : s.right}`}>
-            <img src={props.avatar} className={s.message__img} />
+            <img src={props.avatar} className={s.message__img} alt={"Avatar"} />
             <h6 className={s.message__name}>{props.name}</h6>
             <p className={s.message__descr}>{props.message}</p>
             <span className={s.message__time}>{props.time}</span>
