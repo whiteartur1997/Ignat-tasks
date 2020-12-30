@@ -24,7 +24,7 @@ function HW10() {
             {loading
                 ? (
                     <div>
-                        <img src={spinner} />
+                        <img src={spinner} alt="spinner" />
                     </div>
                 ) : (
                     <div>
