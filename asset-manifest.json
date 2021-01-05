@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Ignat-tasks/static/css/main.fe75c3a6.chunk.css",
-    "main.js": "/Ignat-tasks/static/js/main.5b5fdb41.chunk.js",
-    "main.js.map": "/Ignat-tasks/static/js/main.5b5fdb41.chunk.js.map",
-    "runtime-main.js": "/Ignat-tasks/static/js/runtime-main.9c2e51c4.js",
-    "runtime-main.js.map": "/Ignat-tasks/static/js/runtime-main.9c2e51c4.js.map",
+    "main.css": "/Ignat-tasks/static/css/main.3e0aec92.chunk.css",
+    "main.js": "/Ignat-tasks/static/js/main.e1f649f5.chunk.js",
+    "main.js.map": "/Ignat-tasks/static/js/main.e1f649f5.chunk.js.map",
+    "runtime-main.js": "/Ignat-tasks/static/js/runtime-main.d6bac886.js",
+    "runtime-main.js.map": "/Ignat-tasks/static/js/runtime-main.d6bac886.js.map",
     "static/css/2.60eec0d8.chunk.css": "/Ignat-tasks/static/css/2.60eec0d8.chunk.css",
-    "static/js/2.e0251fe2.chunk.js": "/Ignat-tasks/static/js/2.e0251fe2.chunk.js",
-    "static/js/2.e0251fe2.chunk.js.map": "/Ignat-tasks/static/js/2.e0251fe2.chunk.js.map",
+    "static/js/2.7e250393.chunk.js": "/Ignat-tasks/static/js/2.7e250393.chunk.js",
+    "static/js/2.7e250393.chunk.js.map": "/Ignat-tasks/static/js/2.7e250393.chunk.js.map",
     "index.html": "/Ignat-tasks/index.html",
-    "precache-manifest.fda0b5d0bcbc126480ef53f78e1eced8.js": "/Ignat-tasks/precache-manifest.fda0b5d0bcbc126480ef53f78e1eced8.js",
+    "precache-manifest.4d6c14a078145b19dc497b30c20cff94.js": "/Ignat-tasks/precache-manifest.4d6c14a078145b19dc497b30c20cff94.js",
     "service-worker.js": "/Ignat-tasks/service-worker.js",
     "static/css/2.60eec0d8.chunk.css.map": "/Ignat-tasks/static/css/2.60eec0d8.chunk.css.map",
-    "static/css/main.fe75c3a6.chunk.css.map": "/Ignat-tasks/static/css/main.fe75c3a6.chunk.css.map",
-    "static/js/2.e0251fe2.chunk.js.LICENSE.txt": "/Ignat-tasks/static/js/2.e0251fe2.chunk.js.LICENSE.txt",
+    "static/css/main.3e0aec92.chunk.css.map": "/Ignat-tasks/static/css/main.3e0aec92.chunk.css.map",
+    "static/js/2.7e250393.chunk.js.LICENSE.txt": "/Ignat-tasks/static/js/2.7e250393.chunk.js.LICENSE.txt",
     "static/media/Spinner.svg": "/Ignat-tasks/static/media/Spinner.518ce924.svg",
     "static/media/index.css": "/Ignat-tasks/static/media/digital-7.1e670d88.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.9c2e51c4.js",
+    "static/js/runtime-main.d6bac886.js",
     "static/css/2.60eec0d8.chunk.css",
-    "static/js/2.e0251fe2.chunk.js",
-    "static/css/main.fe75c3a6.chunk.css",
-    "static/js/main.5b5fdb41.chunk.js"
+    "static/js/2.7e250393.chunk.js",
+    "static/css/main.3e0aec92.chunk.css",
+    "static/js/main.e1f649f5.chunk.js"
   ]
 }
