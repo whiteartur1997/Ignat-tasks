@@ -4,7 +4,7 @@
   left: 0;
   width: 200px;
   height: 100vh;
-  background-color: #3b5998;
+  /* background-color: #3b5998; */
   transition: .5s ease;
 }
 
@@ -13,13 +13,13 @@
 }
 
 .header_toggle {
-  background-color: #fff;
-  color: #3b5998;
+  /* background-color: #fff; */
+  /* color: #3b5998; */
   padding: 20px;
   position: absolute;
   top: 25px;
   right: -30%;
-  border: 2px solid #3b5998;
+  border: 2px solid;
   border-radius: 50%;
   transition: .5s ease;
   outline: none;
@@ -43,7 +43,7 @@
 
 .link {
   display: block;
-  color: #fff;
+  /* color: #fff; */
   padding: 20px 10px;
   text-decoration: none;
 }

@@ -22,7 +22,6 @@ function HW11() {
     })
 
     function changeSuperRange(value: number) {
-        debugger
         // так работает
         // if ((value1 + 1 !== value2 && value2 > value) || value === value1 - 1) {
         if ((value1 + 1 !== value2 && value2 > value) || value < value1) {

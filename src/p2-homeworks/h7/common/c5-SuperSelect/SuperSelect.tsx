@@ -20,14 +20,14 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
         // onChange мы должы передавать в пропсах?
-        // onChange && onChange(e);
+        onChange && onChange(e);
         onChangeOption && onChangeOption(e.currentTarget.value);
     }
 
     return (
-            <select onChange={onChangeCallback} {...restProps}>
-                {mappedOptions}
-            </select>
+        <select onChange={onChangeCallback} {...restProps}>
+            {mappedOptions}
+        </select>
     );
 }
 

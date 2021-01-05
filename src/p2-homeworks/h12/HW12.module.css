@@ -2,22 +2,38 @@
     background: dimgrey;
 }
 
-.dark-text {
+.dark-text, .dark-borders {
     color: aliceblue;
+    border-color: aliceblue !important;
+    background-color: dimgrey !important;
 }
 
 .red {
     background: lightcoral;
 }
 
-.red-text {
+.red-text, .red-borders {
     color: aqua;
+    border-color: lightcoral !important;
+    background-color: lightcoral !important;
 }
 
 .some {
     background: lightgreen;
 }
 
-.some-text {
+.some-text, .some-borders {
     color: darkslateblue;
+    border-color: lightgreen !important;
+    background-color: lightgreen !important;
+}
+
+.blue {
+    background-color: #3b5998;
+}
+
+.blue-text, .blue-borders {
+    color: #fff;
+    border-color: #3b5998;
+    background-color: #3b5998;
 }
